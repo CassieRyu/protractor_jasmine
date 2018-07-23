@@ -2,6 +2,7 @@
   "name": "protractor_jasmine",
   "version": "1.0.0",
   "dependencies": {
+    "hoek": "^4.2.1",
     "jasmine-fail-fast": "^2.0.0",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.1.2"
