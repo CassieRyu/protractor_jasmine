@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
 describe('angularjs homepage todo list', function() {
   it('should add a todo', function() {
-    browser.get('https://angularjs.org');
+    browser.get(browser.baseUrl);
 
     element(by.model('todoList.todoText')).sendKeys('write first protractor test');
     element(by.css('[value="add"]')).click();
