@@ -1,7 +1,7 @@
 A framework for UI Testing
 ---------------
 
-###Framework setup steps
+### Framework setup steps
 Update npm
 
     $ npm install -g npm
@@ -22,9 +22,9 @@ Install
     $ npm install --save-dev protractor-beautiful-reporter
 
 
-#####Run test
+##### Run test
 
-* "directConnect: true" which communicates directly Chrome Driver or Firefox Driver, bypassing any Selenium Server. 
+* "directConnect: true" which communicates directly Chrome Driver or Firefox Driver, bypassing any Selenium Server.
 * The advantage of directly connecting to browser drivers is that your test scripts may start up and run faster.
 * To use it, we need to install drivers under protractor first, as above
 ```
@@ -36,10 +36,10 @@ $ npm run local
 $ webdriver-manager start
 $ npm run local
 ```
-#####Test Report
+##### Test Report
 * Refer to src/report/report.html
 
-####Selenium grid
+#### Selenium grid
 * Run test parallel
 * selenium grid configs in `./grid` folder
 * Start selenium hub
