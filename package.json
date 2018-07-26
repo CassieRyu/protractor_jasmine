@@ -16,6 +16,7 @@
     "lint": "node_modules/.bin/jshint src/",
     "local": "node_modules/.bin/protractor ./src/config/local.js --baseUrl=https://angularjs.org",
     "mock": "node_modules/.bin/protractor ./src/config/local.js --baseUrl=https://angularjs.org",
-    "ci": "protractor ./src/config/ci.js --baseUrl=https://angularjs.org"
+    "ci": "protractor ./src/config/ci.js --baseUrl=https://angularjs.org",
+    "ci-multi": "protractor ./src/config/ci-multi.js --baseUrl=https://angularjs.org"
   }
 }

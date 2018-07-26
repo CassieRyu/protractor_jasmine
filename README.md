@@ -6,10 +6,6 @@ Update npm
 
     $ npm install -g npm
 
-Pull code
-
-    $ git clone git@github.com:CassieRyu/protractor_jasmine.git
-
 Install
 
     $ cd protractor_jasmine
@@ -38,7 +34,25 @@ $ npm run local
 * Using selenium standalone, we need to specify selenium address
 ```
 $ webdriver-manager start
-$ npm run ci
+$ npm run local
 ```
 #####Test Report
 * Refer to src/report/report.html
+
+####Selenium grid
+* Run test parallel
+* selenium grid configs in `./grid` folder
+* Start selenium hub
+```
+$ java -jar selenium-server-standalone-3.13.0.jar -role hub  
+```
+* Register nodes
+```
+$ java -Dwebdriver.chrome.driver="chromedriver" -Dwebdriver.gecko.driver="geckodriver" -Dwebdriver.safari.driver="SafariDriver.safariextz" -jar selenium-server-standalone-3.13.0.jar -role node -nodeConfig Node-2.json
+```
+* Run test
+```
+$ npm run ci
+or
+$ npm run ci-multi //TODO: why safari error, firefox not working
+```
